@@ -22,10 +22,12 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'stripe'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -54,3 +56,4 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
