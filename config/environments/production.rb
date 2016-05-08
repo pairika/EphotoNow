@@ -12,7 +12,7 @@ Rails.application.configure do
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = false
   
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => 'https://ephotonow.herokuapp.com/', :protocol => 'https'}
@@ -61,7 +61,7 @@ Rails.application.configure do
   # config.cache_store = :mem_cache_store
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-   config.action_controller.asset_host = "https://s3-us-west-1.amazonaws.com/ephotonow"
+  # config.action_controller.asset_host = "https://s3-us-west-1.amazonaws.com/ephotonow"
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
