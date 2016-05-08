@@ -1,13 +1,8 @@
 class Image < ActiveRecord::Base
+  
   belongs_to :user
-  mount_uploader :picture, PictureUploader
-  validate :picture_size
   
-  
-  private
-    def picture_size
-      if picture.size > 5.megabytes
-        errors.add(:picture, "should be less than 5MB")
-      end
-    end
+  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }
+  validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
+
 end

@@ -23,9 +23,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'carrierwave'
-gem 'mini_magick'
-gem 'fog'
 gem 'stripe'
 
 # Use ActiveModel has_secure_password
@@ -57,3 +54,5 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem "paperclip", "~> 4.3"
+gem 'aws-sdk', '~> 2.3' 

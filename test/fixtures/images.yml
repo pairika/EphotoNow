@@ -3,9 +3,9 @@
 one:
   name: MyString
   picture: MyString
-  user: 
+  user_id: 
 
 two:
   name: MyString
   picture: MyString
-  user: 
+  user_id: 
